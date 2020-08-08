@@ -5,7 +5,32 @@ homebrew_prefix: /usr/local
 homebrew_install_path: "{{ homebrew_prefix }}/Homebrew"
 homebrew_brew_bin_path: "{{ homebrew_prefix }}/bin"
 
-homebrew_installed_packages: []
+homebrew_installed_packages: [
+  'wget',
+  'git',
+  'git-extras',
+  'bash',
+  'bash-git-prompt',
+  'htop',
+  'jq',
+  'tldr',
+  'ncdu',
+  'awscli',
+  'python3',
+  'coreutils',
+  'openssl',
+  'go',
+  'nmap',
+  'node',
+  'nvm',
+  'terraform',
+  'terragrunt',
+  'p7zip',
+  'kubernetes-cli',
+  'gnupg',
+  'openssh',
+  'rsync'
+  ]
 
 homebrew_uninstalled_packages: []
 
@@ -14,7 +39,7 @@ homebrew_upgrade_all_packages: no
 homebrew_taps:
   - homebrew/core
 
-homebrew_cask_apps: []
+homebrew_cask_apps: ['github','firefox','visual-studio-code','openvpn-connect','lastpass']
 
 homebrew_cask_uninstalled_apps: []
 
@@ -27,3 +52,10 @@ homebrew_brewfile_dir: '~'
 homebrew_clear_cache: false
 
 homebrew_folders_additional: []
+
+# echo "\nInstalling bash"
+# brew install bash
+# echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+# chsh -s /usr/local/bin/bash
+# brew install bash-git-prompt
+# #add bashrc stuff
